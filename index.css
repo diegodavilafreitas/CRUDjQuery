@@ -1,0 +1,118 @@
+body {
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#global {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    background: #435D7D;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav h1 {
+    color: azure;
+}
+
+input[type='button']{
+    border-radius: 0.2em;
+    color: #FFFFFF;
+    border: none;
+    background-color: #459F49;
+}
+
+input[value='E']{
+    border-radius: 0.2em;
+    color: #000000;
+    border: none;
+    background-color: #FECC36;
+}
+input[value='R']{
+    border-radius: 0.2em;
+    color: #000000;
+    border: none;
+    background-color: #F5564A;
+}
+
+
+#btnAdd {
+    height: 2em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 97%;
+    border-collapse: collapse;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+tr {
+    border-bottom: 2px solid #FCFCFC;
+    margin: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:hover {
+    background-color: rgb(232, 225, 238);
+}
+
+td {
+    padding: 0.5em;
+
+}
+
+#modal {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 5em;
+    background: #435D7D;
+    color: azure;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+
+}
+
+#modalForm input {
+    width: 95%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+}
+
+
+
+#modalForm select {
+    width: 95%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+    text-align: center;
+}
+

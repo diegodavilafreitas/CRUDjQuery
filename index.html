@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="mindmup-editabletable.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+    <title>CRUDJS</title>
+</head>
+
+<body>
+    <h1>CRUD con JS</h1>
+
+    <div id="global">
+        <div id="nav">
+            <h1>Film <span>Store</span></h1>
+            <input type="button" value="Add New Book" id="btnAdd">
+        </div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Genre</td>
+                    <td>Price</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody id="tbTable">
+                <tr>
+                    <td>Pulp Fiction</td>
+                    <td>Tarantino</td>
+                    <td>Accion</td>
+                    <td>9.99</td>
+                    <td>
+                        <input type="button" name="eddit" class="eddit" value="E">
+                        <input type="button" name="remove" class="remove" value="R">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Odiosos 8</td>
+                    <td>Tarantino</td>
+                    <td>Accion</td>
+                    <td>19.99</td>
+                    <td>
+                        <input type="button" name="eddit" class="eddit" value="E">
+                        <input type="button" name="remove" class="remove" value="R">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Reservoir Dogs</td>
+                    <td>Tarantino</td>
+                    <td>Accion</td>
+                    <td>13.90</td>
+                    <td>
+                        <input type="button" name="eddit" class="eddit" value="E">
+                        <input type="button" name="remove" class="remove" value="R">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Karate kid</td>
+                    <td>Tarantino</td>
+                    <td>Accion</td>
+                    <td>10.00</td>
+                    <td>
+                        <input type="button" name="eddit" class="eddit" value="E">
+                        <input type="button" name="remove" class="remove" value="R">
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div id="modal">
+            <form action="" id="modalForm">
+                <label for="title">Title</label><br>
+                <input type="text" id="title"  required><br>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" required><br>
+                <label for="genre">Genre</label><br>
+               <select name="genre" id="genre">
+                   <option value="Drama">Drama</option>
+                   <option value="Accion">Accion</option>
+                   <option value="Comedia">Comedia</option>
+                   <option value="Porno">Porno</option>
+               </select><br>
+                <label for="price">Price</label><br>
+                <input type="number" id="price"  required><br>
+                <input type="button" id="formBtn" value="Add">
+            </form>
+        </div>
+
+    </div>
+
+<!--    <script>
+        $('#table').editableTableWidget();
+    </script>
+-->
+
+</body>
+
+</html>
